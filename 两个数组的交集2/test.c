@@ -30,7 +30,7 @@ void swap(int *p, int *q)
 int* intersect(int* nums1, int nums1Size, int* nums2, int nums2Size, int* returnSize) {
 	int i = 0;
 	int j = 0;
-	int *returnNew = malloc(sizeof(int)*(nums1Size+nums2Size));
+	long *returnNew = malloc(sizeof(long)*(nums1Size+nums2Size));
 	while (j < nums1Size)
 	{
 		int min1 = nums1[j];
@@ -73,8 +73,8 @@ int* intersect(int* nums1, int nums1Size, int* nums2, int nums2Size, int* return
 
 int main()
 {
-	int nums1[] = { -2147483648, 1, 2, 3 };
-	int nums2[] = { 1, -2147483648, -2147483648 };
+	int nums1[] = { 1,2,2,1 };
+	int nums2[] = { 2,2 };
 	int nums1Size = sizeof(nums1) / sizeof(nums1[0]);
 	int nums2Size = sizeof(nums2) / sizeof(nums2[0]);
 	int input = 0;
