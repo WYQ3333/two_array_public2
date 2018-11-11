@@ -73,8 +73,8 @@ int* intersect(int* nums1, int nums1Size, int* nums2, int nums2Size, int* return
 
 int main()
 {
-	int nums1[] = { 4, 9, 5 };
-	int nums2[] = { 9, 4, 9, 8, 4 };
+	int nums1[] = { -2147483648, 1, 2, 3 };
+	int nums2[] = { 1, -2147483648, -2147483648 };
 	int nums1Size = sizeof(nums1) / sizeof(nums1[0]);
 	int nums2Size = sizeof(nums2) / sizeof(nums2[0]);
 	int input = 0;
